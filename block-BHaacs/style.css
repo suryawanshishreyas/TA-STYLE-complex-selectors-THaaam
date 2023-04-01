@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Styling the body and section element */
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+}
+.main-page{
+    display: inherit;
+    width: 100%;
+    height: 75vh;
+    background-color: #59bfc2;
+    margin-bottom: 280px;
+}
+/* styling navbar and its elements */
+#navbar{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    color: white;
+    padding:30px 100px 30px 100px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+li{
+    font-size: 20px;
+    margin:0 10px;
+}
+li a{
+    text-decoration: none;
+}
+li a:visited{
+    color: white;
+}
+/* Styling the first section containing nav and div */
+.heading-and-title{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+h1{
+    word-spacing: 0.5rem;
+    font-size: 65px;
+    font-weight: 800;
+    color: white;
+    line-height: 6rem;
+}
+/* Button for 30 days trial */
+#trial{
+    width: 340px;
+    font-weight: 600;
+    color: #314377;
+    margin: 30px auto;
+    font-size: 24px;
+    height: 80px;
+    border-radius: 15px;
+    border:none;
+    z-index: 1;
+}
+
+/* hero image */
+#hero-image{
+    position: inherit;
+    top:300px;
+    right:200px;
+    left: 200px;
+    width:900px;
+    height:auto;
+    margin: 0 auto;
+    z-index: 0;
+}
+/* second page */
+.second-page{
+    display: inherit;
+    width: 100%;
+}
+
+/* file types styles */
+.attachment{
+    display: flex;
+}
+.inline{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+    height:50px;
+}
+#files{
+    width: 45px;
+    height: auto;
+}
+#file-type{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px;
+    padding-bottom: 30px;
+}
+
+#file-type li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 36px;
+    font-weight: 800;
+    color: #bdc8e0;
+    word-spacing: normal;
+}
+
+.hori-border{
+    width:84%;
+    border: 1px solid #bdc8e0;
+    margin: 0 auto;
+}
+/* Styling the article and its div  */
+.container-1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+#info-1{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding:60px;
+    padding-left: 180px;
+    margin: 0;
+}
+
+#info-1 h2{
+    font-weight: 800;
+    font-size: 36px;
+    word-spacing: 0.5rem;
+    line-height: 3rem;
+    color: #283e7d;
+    margin-bottom: 20px;
+}
+#info-1 p{
+    line-height: 2.4rem;
+    font-size: 20px;
+    color: #7c8eb7;
+}
+#learn-more{
+    width: 260px;
+    font-weight: 600;
+    color: white;
+    background-color: #59bfc2;
+    font-size: 20px;
+    height: 50px;
+    border:25px solid black;
+    border-bottom-color: #59bfc2;
+    border-top-color: #59bfc2;
+    border-left-color: white;
+    border-right-color: #59bfc2;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0;
+}
+
+#graph{
+    text-align: end;
+    width: 600px;
+   padding: 50px;
+   position: absolute;
+   right: 100px;
+}
+
+/* Syling third section page */
+.third-page h1{
+    color: #283e7d;
+    text-align: center;
+    font-size: 65px;
+}
+
+/* Styling Table and its contents */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 50px auto;
+    font-size: 16px;
+  }
+  
+  td {
+    border: solid 1px #c7cdcd;
+    border-style: none solid solid none;
+    width: 200px;
+    padding: 20px;
+  }
+tr:first-child td:first-child{
+    border-top-left-radius: 10px;
+}
+tr:last-child td:first-child { 
+    border-bottom-left-radius: 10px; 
+}
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+ }
+tr:first-child td { 
+    border-top-style: solid; 
+}
+tr td:first-child { 
+    border-left-style: solid; 
+}
+
+/* coloring first tr of table */
+#bold{
+    background-color: #3d9ea1;
+    padding: 30px;
+}
+#bold:first-of-type{
+    border-top-left-radius: 10px;
+}
+#bold:last-of-type{
+    border-top-right-radius: 10px;
+}
