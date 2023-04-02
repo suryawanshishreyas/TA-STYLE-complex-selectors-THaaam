@@ -46,7 +46,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/* @Media rule for screen sizes */
+@media screen and (max-width: 768px){
+    .info-1 h2{
+        min-width: 100px;
+    }
+    .graph{
+        min-width: 100px;
+    }
+}
 /* Styling the body and section element */
 body{
     font-family: 'Inter', sans-serif;
