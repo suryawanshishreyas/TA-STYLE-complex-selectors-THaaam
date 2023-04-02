@@ -68,19 +68,19 @@ body{
     padding:30px 100px 30px 100px;
 }
 
-ul{
+.nav{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 }
-li{
+.nav-li{
     font-size: 20px;
     margin:0 10px;
 }
-li a{
+.nav-li a{
     text-decoration: none;
 }
-li a:visited{
+.nav-li a:visited{
     color: white;
 }
 /* Styling the first section containing nav and div */
@@ -266,4 +266,145 @@ tr td:first-child {
 }
 #bold:last-of-type{
     border-top-right-radius: 10px;
+}
+/* Using complex selectors to style the table */
+
+.row:nth-child(2n+1){
+    background-color: #d5e5e5;
+}
+/* styling checkbox and its related section*/
+.join-text{
+    display: flex;
+    flex-direction: column;
+}
+.join{
+    color: #283e7d;
+    font-size: 44px;
+    line-height: 3rem;
+    text-align: center;
+}
+.period{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;  
+    justify-content: center; 
+    margin-top: 40px;  
+    font-size: 20px;
+    font-weight: 800;
+}
+.period div{
+    width: 100px;
+    height: 30px;
+    border: 1px solid white;
+    background-color: #bbecec;
+    border-radius: 20px;
+    margin: 0 18px 0 18px;
+}
+div input{
+    border-radius: 4px;
+    opacity: 1;
+    width: 20px;
+    height: 20px;
+    rotate: -90deg;
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+    background-color: #bbecec;
+}
+/* Membership styling */
+.container-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.membership{
+    margin-top: 100px;
+    width: 500px;
+    height: 740px;
+    border: 1px solid #d1dcf3;
+    border-radius: 20px;
+}
+.membership h2{
+    color: #283e7d;
+    text-align: center;
+    margin-top: 60px;
+}
+.membership p{
+    color:#677cab;
+    padding: 20px;
+    font-size: 22px;
+    text-align: center;
+}
+/* styling price segment */
+.price{
+    text-align: center;
+    color: #7588b3;
+}
+.price::first-letter{
+    color: #59bfc2;
+}
+.price span:first-of-type{
+    font-size: 60px;
+    color: #59bfc2;
+    margin-right: 10px;
+}
+/* styling ul segment */
+.benefits{
+    text-align: center;
+    padding: 60px 200px 50px 30px;
+}
+.benefits li{
+    font-size: 25px;
+    width:max-content;
+    padding-bottom: 30px;
+}
+.benefits img{
+    margin-right: 20px;
+}
+.start{
+    width: 400px;
+    height: 70px;   
+    border: 1px solid #d1dcf3;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #283e7d;
+    margin-top: 10px;
+}
+.green-start{
+    width: 400px;
+    height: 70px;   
+    border: 1px solid #d1dcf3;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #283e7d;
+    margin-top: 10px;
+    background-color: #59bfc2;
+}
+.final-button{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 170px;
+    background-color: #59bfc2;
+    margin: 0 auto;
+    margin-top: 120px;
+    border-radius: 30px;
+    margin-bottom: 100px;
+
+}
+.btn-header{
+    font-size: 30px;
+    text-align: center;
+}
+
+.final-button button{
+    margin: 0 auto;
+    height: 60px;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: white;
+    color: #283e7d;
 }

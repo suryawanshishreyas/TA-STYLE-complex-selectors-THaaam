@@ -7,14 +7,14 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <section class="main-page">
+        <section class="main-page" id="features">
             <nav id="navbar">
                 <h2>TrackL</h1>
-                <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#help">Help</a></li>
+                <ul class="nav">
+                    <li class="nav-li"><a href="#features">Features</a></li>
+                    <li class="nav-li"><a href="#pricing">Pricing</a></li>
+                    <li class="nav-li"><a href="#about">About</a></li>
+                    <li class="nav-li"><a href="#help">Help</a></li>
                 </ul>
             </nav>
             <div class="heading-and-title">
@@ -23,7 +23,7 @@
                 <img id="hero-image" alt="hero-image" src="./assets/hero.png">
             </div>
         </section>
-        <section class="second-page">
+        <section class="second-page" id="pricing">
                 <ul id="file-type">
                     <div class="inline"><img src="./assets/pdf.png" id="files"><li>PDF FILE</li></div>
                     <div class="inline"><img src="./assets/word.png" id="files"><li>WORD FILE</li></div>
@@ -40,7 +40,7 @@
                     <img src="./assets/learning-graph.png" id="graph">
                 </div>
         </section>  
-        <section class="third-page">
+        <section class="third-page" id="about">
             <h1>WEEKLY SCORE</h1>
             <div class="table">
                 <table>
@@ -50,38 +50,44 @@
                         <th id="bold">Score (0-100)</th>
                         <th id="bold">Hour Spent</th>
                     </tr>
-                    <tr>
+                    <tr class="row">
                         <td>Monday</td>
                         <td>Product Design</td>
                         <td>40</td>
                         <td>2 Hour 30 Min</td>
                     </tr>
-                    <tr>
+                    <tr class="row">
                         <td>Tuesday</td>
                         <td>Product Design</td>
                         <td>60</td>
                         <td>3 Hour 20 Min</td>
                     </tr>
-                    <tr>
+                    <tr class="row">
                         <td>Wednesday</td>
                         <td>Data Science</td>
                         <td>20</td>
                         <td>1 Hour 30 Min</td>
                     </tr>
-                    <tr>
+                    <tr class="row">
                         <td>Thursday</td>
                         <td>UI Design</td>
                         <td>60</td>
                         <td>2 Hour 20 Min</td>
                     </tr>
-                    <tr>
+                    <tr class="row">
                         <td>Friday</td>
                         <td>UX Design</td>
                         <td>30</td>
                         <td>2 Hour 30 Min</td>
                     </tr>
-                    <tr>
+                    <tr class="row">
                         <td>Saturday</td>
+                        <td>Data Science</td>
+                        <td>50</td>
+                        <td>2 Hour 40 Min</td>
+                    </tr>
+                    <tr class="row">
+                        <td>Sunday</td>
                         <td>HTML & CSS</td>
                         <td>70</td>
                         <td>3 Hour 30 Min</td>
@@ -89,6 +95,48 @@
                 </table>
             </div>
         </section>
+        <section class="plans" id="help">
+            <div class="join-text">
+                <h1 class="join">Join Us And Let's Study<br>With Your Friends</h1>
+                <h2 class="period">Monthly<div><input type="checkbox" id="checkbox"></div>Yearly</h2>
+            </div>
+            <div class="container-2">
+            <div class="membership">
+                <h2>Basic</h2>
+                <p>It is a long established fact that a reader will be distracted by a readable</p>
+                <p class="price">$ <span>48</span>/Month</p>
+                <ul class="benefits">
+                    <li><img id="tick" src="./assets/tick.png">50 Courses a day</li>
+                    <li><img id="tick" src="./assets/tick.png">4 forums a month</li>
+                    <li><img id="tick" src="./assets/tick.png">16 Chapters a day</li>
+                    <li><img id="tick" src="./assets/cross.png">Private Lessons Once A Week</li>
+                    <li><img id="tick" src="./assets/cross.png">Get Weekly Reward</li>
+                    <button class="start">Get Started</button>
+                </ul>
+            </div>
+            <div class="membership">
+                    <h2>Advanced</h2>
+                    <p>It is a long established fact that a reader will be distracted by a readable</p>
+                    <p class="price">$ <span>58</span>/Month</p>
+                    <ul class="benefits">
+                        <li><img id="tick" src="./assets/tick.png">50 Courses a day</li>
+                        <li><img id="tick" src="./assets/tick.png">4 forums a month</li>
+                        <li><img id="tick" src="./assets/tick.png">16 Chapters a day</li>
+                        <li><img id="tick" src="./assets/tick.png">Private Lessons Once A Week</li>
+                        <li><img id="tick" src="./assets/tick.png">Get Weekly Reward</li>
+                        <button class="green-start">Get Started</button>
+                    </ul>
+            </div>
+            </div>
+            <div class="final-button">
+                <h1 class="btn-header">Start Your 30 Days Trial Now!</h1>
+                <button class="start-1">Get Started</button>
+            </div>
+        </section>
     <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');</style>
+    <script>
+        let checkbox = document.getElementById("checkbox");
+        checkbox.indeterminate = true;
+    </script>
     </body>
 </html>
